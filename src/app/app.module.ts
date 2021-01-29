@@ -8,6 +8,9 @@ import {CoreModule} from './core/core.module';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {ApiInterceptor} from './core/api.interceptor';
 import {SharedModule} from './shared/shared.module';
+import {MatTableModule} from '@angular/material/table'; 
+import {MatSortModule} from '@angular/material/sort'; 
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import {SharedModule} from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule,
+    SharedModule, 
+    MatSortModule,
+    MatTableModule
 
   ],
   providers: [
